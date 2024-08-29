@@ -96,16 +96,15 @@
                 $('#email').val(customer.email || '');
                 $('#phone').val(customer.phone || '');
                 if (customer.profile_pic) {
-                    $('#currentProfilePic').attr('src', customer.profile_pic).show();
+                $('#currentProfilePic').attr('src', customer.profile_pic).show();
                 } else {
-                    $('#currentProfilePic').hide();
+                $('#currentProfilePic').hide();
                 }
-
                 $('#profile_pic').val('');
                 $('#customerModal').dialog({
-                    modal: true,
-                    width: 400,
-                    height: 500 // Adjusted for image
+                modal: true,
+                width: 400,
+                height: 500
                 });
             }
             $(document).on('click', '.editCustomerBtn', function() {
